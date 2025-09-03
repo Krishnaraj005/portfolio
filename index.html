@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishnaraj Singh Bais - Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+    <div id="root" class="min-h-screen">
+        <header class="fixed top-0 left-0 right-0 z-50 glass-effect">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold tracking-wider">Krishnaraj Singh Bais</a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="hover:text-sky-400 transition-colors duration-300">About</a>
+                    <a href="#experience" class="hover:text-sky-400 transition-colors duration-300">Experience</a>
+                    <a href="#projects" class="hover:text-sky-400 transition-colors duration-300">Projects</a>
+                    <a href="#contact" class="px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-lg text-white transition-colors duration-300">Contact</a>
+                </nav>
+                 <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+             <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+                <a href="#about" class="block py-2 hover:text-sky-400">About</a>
+                <a href="#experience" class="block py-2 hover:text-sky-400">Experience</a>
+                <a href="#projects" class="block py-2 hover:text-sky-400">Projects</a>
+                <a href="#contact" class="block mt-2 px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-lg text-white text-center">Contact</a>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-6 pt-24">
+
+            <section id="home" class="min-h-[calc(100vh-6rem)] flex items-center justify-center text-center section-glow">
+                <div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                        Innovative Software Solutions
+                        <br>
+                        to Build a Connected <span class="gradient-text">{World}</span>
+                    </h1>
+                    <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-400">
+                        Results-driven Software Developer skilled in Python, Django, REST APIs, JavaScript, and React. I build scalable, secure, and high-performance applications with clean, maintainable code.
+                    </p>
+                    <div class="mt-8 flex justify-center items-center gap-4">
+                        <a href="#about" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg font-semibold transition-colors duration-300">About Me</a>
+                        <a href="#contact" class="px-6 py-3 border border-slate-600 hover:bg-slate-800 rounded-lg font-semibold transition-colors duration-300 flex items-center gap-2">
+                            Let's Talk <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                    <div class="mt-12 flex justify-center items-center gap-6 text-slate-500">
+                         <a href="https://github.com/Krishnaraj-Singh" target="_blank" class="hover:text-sky-400 transition-colors duration-300"><i data-lucide="github" class="w-6 h-6"></i></a>
+                        <a href="https://www.linkedin.com/in/krishnaraj-singh-bais/" target="_blank" class="hover:text-sky-400 transition-colors duration-300"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="py-20 lg:py-32 section-glow">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-sky-500 mb-12"></div>
+                <div class="grid lg:grid-cols-5 gap-12 items-start">
+                    <div class="lg:col-span-3">
+                        <p class="text-xl text-slate-300 mb-6">
+                            I'm Krishnaraj Singh Bais, a software <span class="text-sky-400">{developer}</span>.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed">
+                            Adept at building scalable and secure applications, my work involves converting business needs into tangible tech solutions. I have experience developing high-traffic web apps serving over 150K+ monthly users and have built platforms capable of managing 100K+ concurrent users during live events. My focus is on writing clean, maintainable code and optimizing application performance to deliver seamless user experiences.
+                        </p>
+                         <div class="mt-10 grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+                            <div class="glass-effect p-6 rounded-lg">
+                                <h3 class="text-4xl font-bold gradient-text">1+</h3>
+                                <p class="mt-2 text-slate-400">Years of Experience</p>
+                            </div>
+                            <div class="glass-effect p-6 rounded-lg">
+                                <h3 class="text-4xl font-bold gradient-text">100K+</h3>
+                                <p class="mt-2 text-slate-400">Concurrent Users Managed</p>
+                            </div>
+                            <div class="glass-effect p-6 rounded-lg">
+                                <h3 class="text-4xl font-bold gradient-text">35%</h3>
+                                <p class="mt-2 text-slate-400">API Response Time Reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="lg:col-span-2">
+                        <h3 class="text-2xl font-bold mb-6">My Skills</h3>
+                        <div class="space-y-5">
+                            <div>
+                                <p class="flex justify-between mb-1"><span>Python & Django</span><span>90%</span></p>
+                                <div class="w-full skill-bar-bg rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 90%"></div></div>
+                            </div>
+                            <div>
+                                <p class="flex justify-between mb-1"><span>JavaScript & React</span><span>85%</span></p>
+                                <div class="w-full skill-bar-bg rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 85%"></div></div>
+                            </div>
+                            <div>
+                                <p class="flex justify-between mb-1"><span>REST APIs</span><span>95%</span></p>
+                                <div class="w-full skill-bar-bg rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 95%"></div></div>
+                            </div>
+                             <div>
+                                <p class="flex justify-between mb-1"><span>Databases (PostgreSQL, MySQL)</span><span>80%</span></p>
+                                <div class="w-full skill-bar-bg rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 80%"></div></div>
+                            </div>
+                              <div>
+                                <p class="flex justify-between mb-1"><span>HTML & CSS</span><span>90%</span></p>
+                                <div class="w-full skill-bar-bg rounded-full h-2.5"><div class="skill-bar-fill h-2.5 rounded-full" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="py-20 lg:py-32 section-glow">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Professional Experience</h2>
+                <div class="w-20 h-1 bg-sky-500 mb-12"></div>
+                <div class="relative border-l-2 border-slate-700 pl-10">
+                    <div class="mb-12">
+                         <div class="absolute w-4 h-4 bg-sky-500 rounded-full mt-1.5 -left-2 border-4 border-slate-800"></div>
+                        <p class="text-sm text-slate-400">Jun 2025 - Present</p>
+                        <h3 class="text-xl font-bold text-sky-400 mt-1">Software Developer</h3>
+                        <p class="text-lg text-slate-300">Innovative Stack Technologies PVT LTD (Cloud Zappy)</p>
+                        <ul class="mt-4 list-disc list-inside text-slate-400 space-y-2">
+                           <li>Built and maintained the DataHack Summit platform for Analytics Vidhya, managing 100K+ concurrent users.</li>
+                            <li>Planned and optimized REST APIs (Django DRF) with PostgreSQL, reducing response time by 35% under peak load.</li>
+                            <li>Executed secure modules for registrations, workshops, and live sessions, ensuring zero downtime.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="absolute w-4 h-4 bg-sky-500 rounded-full mt-1.5 -left-2 border-4 border-slate-800"></div>
+                        <p class="text-sm text-slate-400">Apr 2024 - May 2024</p>
+                        <h3 class="text-xl font-bold text-sky-400 mt-1">Software Developer</h3>
+                        <p class="text-lg text-slate-300">IT Geeks Technologies PVT LTD</p>
+                         <ul class="mt-4 list-disc list-inside text-slate-400 space-y-2">
+                           <li>Developed and maintained a high-traffic web app (150K+ monthly users) with Python, Django, and React.</li>
+                           <li>Integrated third-party APIs, reducing integration time by 25% through reusable modules.</li>
+                           <li>Applied role-based authentication and optimized backend for faster load speeds.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="py-20 lg:py-32 section-glow">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-sky-500 mb-12"></div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-effect rounded-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+                         <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="server-cog" class="w-10 h-10 text-sky-400"></i>
+                             <a href="#" class="text-slate-400 hover:text-sky-400"><i data-lucide="external-link" class="w-6 h-6"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Analytics Vidhya - DataHack Summit 2025</h3>
+                        <p class="text-slate-400 mb-4">
+                            Developed RESTful APIs for session registrations, workshop enrollments, and multiple event modules, ensuring scalability for thousands of participants and zero downtime.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">Django REST</span>
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">PostgreSQL</span>
+                             <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">AJAX</span>
+                        </div>
+                    </div>
+                    <div class="glass-effect rounded-lg p-8 transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <i data-lucide="utensils-crossed" class="w-10 h-10 text-sky-400"></i>
+                            <a href="#" class="text-slate-400 hover:text-sky-400"><i data-lucide="external-link" class="w-6 h-6"></i></a>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2">Absolute Barbecues Buffet Management</h3>
+                        <p class="text-slate-400 mb-4">
+                             A full-stack restaurant management solution for orders, menus & reservations. Enforced CRUD operations & real-time updates using AJAX, cutting page load time by 30%.
+                        </p>
+                         <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">PHP</span>
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">MySQL</span>
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-slate-700 text-sky-300 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">AJAX</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="contact" class="py-20 lg:py-32 text-center section-glow">
+                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-sky-500 mb-8 mx-auto"></div>
+                <p class="max-w-2xl mx-auto text-slate-400 mb-8">
+                    I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hi, feel free to reach out. Let's build something amazing together!
+                </p>
+                <a href="mailto:baiskrishnrajsingh@gmail.com" class="inline-block px-8 py-4 bg-sky-500 text-white font-bold rounded-lg hover:bg-sky-600 transition-colors duration-300">
+                    Say Hello
+                </a>
+            </section>
+
+        </main>
+        
+        <footer class="border-t border-slate-800">
+            <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+                <div class="flex justify-center items-center gap-6 mb-6">
+                     <a href="https://github.com/Krishnaraj-Singh" target="_blank" class="hover:text-sky-400 transition-colors duration-300"><i data-lucide="github" class="w-6 h-6"></i></a>
+                    <a href="https://www.linkedin.com/in/krishnaraj-singh-bais/" target="_blank" class="hover:text-sky-400 transition-colors duration-300"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                </div>
+                <p>&copy; 2025 Krishnaraj Singh Bais. All rights reserved.</p>
+                <p class="text-sm mt-2">Designed with inspiration from your references.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
